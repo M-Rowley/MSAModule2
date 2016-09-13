@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mrow277 Module 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap link-->
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--CSS link-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  </head>
+
+  <body>
+    <h1>Mrow277 League of Legends API Webapp</h1><br />
+    
+    <div id = "inputs">
+      <p>Select region and input summoner name</p>
+
+      <select id="region">
+        <option value="br">BR</option>
+        <option value="eune">EUNES</option>
+        <option value="euw">EUW</option>
+        <option value="jp">JP</option>
+        <option value="kr">KR</option>
+        <option value="lan">LAN</option>
+        <option value="las">LAS</option>
+        <option value="na">NA</option>
+        <option value="oce" selected="selected">OCE</option>
+        <option value="ru">RU</option>
+        <option value="tr">TR</option>
+      </select>
+
+      <input id="username" value="Acetius" />
+      <input type="submit" onclick="summonerLookup();" />
+      <br /><br />
+    </div>
+
+    <div class="table-responsive">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>Summoner Name</td>
+            <td id = "summonerName"></td>
+          </tr>
+          <tr>
+            <td>Summoner ID</td>
+            <td id = "summonerID"></td>
+          </tr>
+          <tr>
+            <td>Summoner Level</td>
+            <td id = "summonerLevel"></td>
+          </tr>
+          <tr>
+            <td>Rank</td>
+            <td id = "summonerRank"></td>
+          </tr>
+          <tr>
+            <td>Wins</td>
+            <td id = "summonerWins"></td>
+          </tr>
+          <tr>
+            <td>Losses</td>
+            <td id = "summonerLosses"></td>
+          </tr>
+          <tr>
+            <td>Overall Win Rate</td>
+            <td id = "summonerWinRate"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <div id='footer'>This application isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</div>
+
+    <!--jQuery Script-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!--Bootstrap Script-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Custom Script-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
