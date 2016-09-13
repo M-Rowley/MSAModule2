@@ -16,6 +16,7 @@
     <div id = "inputs">
       <p>Select region and input summoner name</p>
 
+      <!--dropdown menu to select region, Oceania by default-->
       <select id="region">
         <option value="br">BR</option>
         <option value="eune">EUNES</option>
@@ -30,11 +31,14 @@
         <option value="tr">TR</option>
       </select>
 
+      <!--input field for username, mine by default-->
       <input id="username" value="Acetius" />
+      <!--submit button-->
       <input type="submit" onclick="summonerLookup();" />
       <br /><br />
     </div>
 
+    <!--Bootstrap responsive table to organise results-->
     <div class="table-responsive">
       <table class="table">
         <tbody>
@@ -70,8 +74,7 @@
       </table>
     </div>
 
-
-
+    <!--Disclaimer required by Riot's terms and conditions-->
     <div id='footer'>This application isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</div>
 
     <!--jQuery Script-->
